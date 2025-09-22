@@ -16,7 +16,7 @@ declare module 'vue' {
     HomeButton: typeof import('./components/header/HomeButton.vue')['default']
     PokemonAdvantageWeakness: typeof import('./components/pokemon/PokemonAdvantageWeakness.vue')['default']
     PokemonEvolutionChain: typeof import('./components/pokemon/evolutionChain/PokemonEvolutionChain.vue')['default']
-    PokemonGrid: typeof import('./components/home/PokemonGrid.vue')['default']
+    PokemonGrid: typeof import('./components/PokemonGrid.vue')['default']
     PokemonInfos: typeof import('./components/pokemon/PokemonInfos.vue')['default']
     PokemonMoves: typeof import('./components/pokemon/PokemonMoves.vue')['default']
     PokemonStatsChart: typeof import('./components/pokemon/PokemonStatsChart.vue')['default']

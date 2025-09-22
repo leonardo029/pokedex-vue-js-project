@@ -1,5 +1,5 @@
-import type { IStatPokemon } from "../pokemon/IStatPokemon"
-import type { ITypePokemon } from "../ITypePokemon"
+import type { IStatPokemon } from "./pokemon/IStatPokemon"
+import type { ITypePokemon } from "./ITypePokemon"
 
 export interface IInfoPokemon {
   id: number,
