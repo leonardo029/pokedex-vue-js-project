@@ -49,7 +49,7 @@
     <v-row class="flex-grow-1">
       <v-row class="flex-grow-1">
 
-        <template v-if="loading && infoPokemonStore.listInfoPokemon.length === 0">
+        <template v-if="loading">
           <v-col v-for="n in limit" :key="n" cols="3">
             <v-card class="pa-6 d-flex flex-column align-center justify-center" height="405" rounded>
               <v-progress-circular
@@ -67,7 +67,10 @@
             :key="pokemon.id"
             cols="3"
           >
-            <v-card class="pa-6 d-flex flex-column align-center" rounded @click="goToDetail(pokemon)">
+            <v-card 
+              class="pa-6 d-flex flex-column align-center" 
+              rounded 
+              @click="!loading && goToDetail(pokemon)">
 
               <div class="d-flex align-center justify-center" style="height: 250px; width: 250px;">
                 <v-img
