@@ -23,7 +23,7 @@
             </span>
           </template>
           <template v-else>
-            <h4 class="text-primary">Advantages not found</h4>
+            <h4 class="text-primary">Has no advantages</h4>
           </template>
         </div>
       </div>
@@ -42,7 +42,7 @@
             </span>
           </template>
           <template v-else>
-            <h4 class="text-primary">Weaknesses not found</h4>
+            <h4 class="text-primary">Has no weaknesses</h4>
           </template>
         </div>
       </div>
