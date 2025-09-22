@@ -13,6 +13,7 @@
         </div>
         <div class="my-8 mx-8">
           <v-img
+            v-if="pokemon.official_artwork.front_default"
             :src="pokemon.official_artwork.front_default"
             width="650"
             height="650"
@@ -20,12 +21,11 @@
             aspect-ratio="1"
             cover
           >
-            <template #placeholder>
-              <div class="d-flex justify-center align-center" style="height: 100%;">
-                <v-progress-circular indeterminate color="blue" size="50" />
-              </div>
-            </template>
           </v-img>
+
+          <div v-else class="d-flex align-center justify-center" style="width: 650px; height: 650px;">
+            <h1 class="text-primary">Image not found</h1>
+          </div>
         </div>
       </div>
       <div class="d-flex flex-column ga-4">

@@ -26,6 +26,7 @@
             @click="goToDetail(teamStore.team[i - 1])"
           >
             <v-img
+              v-if="teamStore.team[i - 1].official_artwork.front_default"
               :src="teamStore.team[i - 1].official_artwork.front_default"
               width="250"
               height="250"
@@ -33,6 +34,10 @@
               aspect-ratio="1"
               cover
             />
+
+            <div v-else>
+              <h2 class="text-primary">Image not found</h2>
+            </div>
           </div>
 
           <v-card-subtitle class="mt-1">

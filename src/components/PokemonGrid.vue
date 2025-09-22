@@ -71,6 +71,7 @@
 
               <div class="d-flex align-center justify-center" style="height: 250px; width: 250px;">
                 <v-img
+                  v-if="pokemon.official_artwork.front_default"
                   :src="pokemon.official_artwork.front_default"
                   width="250"
                   height="250"
@@ -79,6 +80,10 @@
                   cover
                 >
                 </v-img>
+
+                <div v-else>
+                  <h3 class="text-primary">Image not found</h3>
+                </div>
               </div>
 
               <v-card-subtitle class="mt-1">ID: {{ formatPokemonId(pokemon.id) }}</v-card-subtitle>
@@ -128,7 +133,6 @@
 </style>
 
 <script lang="ts">
-import { useAllNamesPokemonStore } from '@/stores/useAllNamesPokemonStore';
 import { useListInfoPokemonStore } from '@/stores/useListInfoPokemonStore';
 import { formatWord, formatPokemonId } from '@/utils/format';
 import type { IInfoPokemon } from '@/interfaces';
