@@ -15,6 +15,7 @@ declare module 'vue' {
     HeaderLogo: typeof import('./components/header/HeaderLogo.vue')['default']
     HomeButton: typeof import('./components/header/HomeButton.vue')['default']
     PokemonAdvantageWeakness: typeof import('./components/pokemon/PokemonAdvantageWeakness.vue')['default']
+    PokemonCard: typeof import('./components/team/PokemonCard.vue')['default']
     PokemonEvolutionChain: typeof import('./components/pokemon/evolutionChain/PokemonEvolutionChain.vue')['default']
     PokemonGrid: typeof import('./components/PokemonGrid.vue')['default']
     PokemonInfos: typeof import('./components/pokemon/PokemonInfos.vue')['default']
