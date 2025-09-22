@@ -19,6 +19,7 @@ declare module 'vue' {
     PokemonGrid: typeof import('./components/PokemonGrid.vue')['default']
     PokemonInfos: typeof import('./components/pokemon/PokemonInfos.vue')['default']
     PokemonMoves: typeof import('./components/pokemon/PokemonMoves.vue')['default']
+    PokemonSearchError: typeof import('./components/pokemon/PokemonSearchError.vue')['default']
     PokemonStatsChart: typeof import('./components/pokemon/PokemonStatsChart.vue')['default']
     PokemonTitle: typeof import('./components/pokemon/PokemonTitle.vue')['default']
     PokemonTypes: typeof import('./components/pokemon/PokemonTypes.vue')['default']

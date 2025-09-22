@@ -5,7 +5,7 @@
   </div>
 
   <div v-else-if="infoPokemonStore.error">
-    <p class="text-center">{{ infoPokemonStore.error }}</p>
+    <PokemonSearchError/>
   </div>
 
   <div v-else-if="infoPokemonStore.pokemon" class="d-flex flex-column py-8 ga-2">
