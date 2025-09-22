@@ -1,1 +1,1 @@
-export * from './IIconItem'
+export * from './IIconItem';

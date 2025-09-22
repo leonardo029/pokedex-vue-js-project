@@ -10,9 +10,21 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/footer/AppFooter.vue')['default']
     AppHeader: typeof import('./components/header/AppHeader.vue')['default']
-    AppLogo: typeof import('./components/header/AppLogo.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    EvolutionNode: typeof import('./components/pokemon/evolutionChain/EvolutionNode.vue')['default']
+    HeaderIcons: typeof import('./components/header/HeaderIcons.vue')['default']
+    HeaderLogo: typeof import('./components/header/HeaderLogo.vue')['default']
+    HomeButton: typeof import('./components/header/HomeButton.vue')['default']
+    PokemonAdvantageWeakness: typeof import('./components/pokemon/PokemonAdvantageWeakness.vue')['default']
+    PokemonEvolutionChain: typeof import('./components/pokemon/evolutionChain/PokemonEvolutionChain.vue')['default']
+    PokemonGrid: typeof import('./components/home/PokemonGrid.vue')['default']
+    PokemonInfos: typeof import('./components/pokemon/PokemonInfos.vue')['default']
+    PokemonMoves: typeof import('./components/pokemon/PokemonMoves.vue')['default']
+    PokemonStatsChart: typeof import('./components/pokemon/PokemonStatsChart.vue')['default']
+    PokemonTitle: typeof import('./components/pokemon/PokemonTitle.vue')['default']
+    PokemonTypes: typeof import('./components/pokemon/PokemonTypes.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SearchButton: typeof import('./components/header/SearchButton.vue')['default']
+    TeamButton: typeof import('./components/header/TeamButton.vue')['default']
   }
 }
