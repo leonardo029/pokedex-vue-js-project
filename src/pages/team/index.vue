@@ -36,7 +36,7 @@
             />
 
             <div v-else>
-              <h2 class="text-primary">Image not found</h2>
+              <h2 class="text-primary">Image not available</h2>
             </div>
           </div>
 

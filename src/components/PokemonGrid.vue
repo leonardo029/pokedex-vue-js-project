@@ -82,7 +82,7 @@
                 </v-img>
 
                 <div v-else>
-                  <h3 class="text-primary">Image not found</h3>
+                  <h3 class="text-primary">Image not available</h3>
                 </div>
               </div>
 

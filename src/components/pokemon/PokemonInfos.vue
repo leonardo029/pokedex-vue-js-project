@@ -24,7 +24,7 @@
           </v-img>
 
           <div v-else class="d-flex align-center justify-center" style="width: 650px; height: 650px;">
-            <h1 class="text-primary">Image not found</h1>
+            <h1 class="text-primary">Image not available</h1>
           </div>
         </div>
       </div>
