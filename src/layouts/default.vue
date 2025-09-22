@@ -8,6 +8,9 @@
   <AppFooter />
 </template>
 
-<script lang="ts" setup>
-  //
+<script lang="ts">
+
+export default {
+  name: 'AppLayout',
+}
 </script>

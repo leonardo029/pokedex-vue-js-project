@@ -37,7 +37,6 @@
 
 <script lang="ts">
 import type { PropType } from 'vue'
-import { ref } from 'vue'
 
 interface IMove {
   move: {
@@ -56,9 +55,10 @@ export default {
     }
   },
 
-  setup() {
-    const expanded = ref(false)
-    return { expanded }
+  data() {
+    return {
+      expanded: false
+    }
   },
 
   methods: {
